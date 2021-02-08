@@ -1,0 +1,57 @@
+.container 
+{   position:relative;
+    &__photo
+    {
+        width:55%;
+        position:absolute;
+        z-index:10;
+        transition: all 0.2s;
+        &:hover
+        {
+            z-index:20;
+            transform:scale(1.1);
+            outline:1.4rem solid $Medium_green;
+            outline-offset:1.4rem;
+        }
+    }
+    &_img--1
+    {   
+        top:-2rem;
+        left:0rem;
+    }
+    &_img--2
+    {
+        right:0rem;
+    }
+
+    &_img--3
+    {
+        top:10rem;
+        left:20%;
+    }
+    &:hover &__photo:not(:hover)
+    {
+        transform:scale(0.95);
+    }
+}
+.card-image
+{
+    background-size:cover;
+    height:45%;
+    background-blend-mode: screen;
+    clip-path: circle(64.8% at 50% 19%);
+    border-radius:3rem; 
+    &-1
+    {
+        background-image:linear-gradient(to left,rgba(233, 133, 18, 0.308),rgba(221, 168, 107, 0.452)), url('../img/nat-5.jpg');
+
+    }
+    &-2
+    {
+        background-image:linear-gradient(to left,rgba(133, 19, 124, 0.226),rgba(217, 114, 226, 0.24)), url('../img/nat-9.jpg');
+    }
+    &-3
+    {
+        background-image:linear-gradient(to left,rgba(34, 235, 185, 0.384),rgba(107, 240, 233, 0.281)), url('../img/nat-8.jpg');
+    }
+}

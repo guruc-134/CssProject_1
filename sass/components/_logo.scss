@@ -1,0 +1,30 @@
+.logo-box
+{
+    &--white
+    {
+        height: 4rem;
+        margin: 2rem;
+        animation: appear 2s ease-in;
+    }
+    &:hover{
+        animation:swing 3s ease-in-out;
+    }
+}
+.font_icons
+{
+    padding-top: 1rem;
+    font-size:8rem;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    transition: all .2s;
+    background-image:  linear-gradient(to left,rgba($Light_green,.8),rgba($Dark_green,.7)) ,url('../img/hero.jpg');
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    &:hover
+    {
+        transform: translateY(-1.4rem);
+    }
+}

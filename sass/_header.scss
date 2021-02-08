@@ -1,0 +1,8 @@
+.header
+{
+    height:95vh;
+    font-family:"Roboto" ,sans-serif;
+    color:white;
+    background-image: linear-gradient(to left,$Light_green,$Dark_green) ,url('../img/hero.jpg');
+    clip-path: polygon(0 0 ,100% 0 ,100% 75%,0 100%);
+}

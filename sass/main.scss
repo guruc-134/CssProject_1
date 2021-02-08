@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'animations';
+@import 'mixins';
+@import 'header';
+@import 'grid';
+@import 'components/button';
+@import 'typography';
+@import 'section';
+@import 'components/logo';
+@import 'components/cards';
+@import 'components/image_component';
+@import 'utilities';
+
+*,*::after,*::before
+{
+    margin: 0px;
+    box-sizing: inherit;
+    padding:0px;
+}
+html
+{
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width:1200px)
+{
+    html
+    {
+        font-size:50%;
+    }
+}
+body
+{
+    z-index:-1;
+    font-family:'Lato' ,monospace;
+    height:40rem;
+    padding:2rem;
+    background-color:$Body_Background;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+    
+

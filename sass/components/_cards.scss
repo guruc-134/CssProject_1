@@ -1,0 +1,58 @@
+.card
+{
+    perspective:180rem;
+    cursor:pointer;
+    padding-top:3rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    height:55rem;
+    position:relative;
+    border-radius: 3rem;
+    justify-content:center;
+    text-align: center;
+    background-blend-mode:screen;
+    &-1
+    {
+        align-content:center;
+        &-front
+        {
+        @include card(false,$card_1_front);
+        }
+        &-back
+        {
+            @include card(true,$card_1_back);
+        }
+    }
+    &-2
+    {
+        align-content:center;
+        &-front
+        {
+        @include card(false,$card_2_front);
+        }
+        &-back
+        {
+            @include card(true,$card_2_back);
+        }
+    }
+    &-3
+    {
+        background-image:line;
+        align-content:center;
+        &-front
+        {
+        @include card(false,$card_3_front);
+        }
+        &-back
+        {
+            @include card(true,$card_3_back);
+        }
+    }
+    &:hover [class$='-front']{
+        transform: rotateY(-180deg);
+    }
+    &:hover  [class$='-back']
+    {
+        transform: rotateY(0deg);
+    }
+}

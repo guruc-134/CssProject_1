@@ -1,0 +1,24 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin card($back,$background)
+{
+    width:100%;
+    height:55rem;
+    position:absolute;
+    top:0px;  
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    box-shadow:0rem 1.5rem 4rem rgba(56, 55, 55, 0.507);
+    background-image: $background;
+    border-radius: 3rem;
+    @if $back
+    {
+        background-color: $background;
+        transform: rotateY(180deg);
+    }
+}
