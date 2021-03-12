@@ -1,0 +1,39 @@
+.stories
+{
+    padding:3rem;
+}
+
+.story
+{
+    width:75%;
+    background: $main_background;
+    margin: 4rem auto;
+    padding:6rem;
+    transform: skewX(-10deg);
+    > *
+    {
+        transform: skewX(10deg);
+    }
+    &-figure
+    {
+        width:15rem;
+        height: 15rem;
+        float:left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(10deg);
+    }
+    &__img
+    {
+        height:100%;
+
+    }
+    &__text
+    {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+    }
+}

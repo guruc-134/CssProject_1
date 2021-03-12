@@ -139,8 +139,12 @@
     padding: 2rem;
     margin-top: 22rem; }
 
-.section_button {
-  background-color: #54c47a; }
+.section_button:visited, .section_button:link {
+  background-color: #54c47a;
+  color: white;
+  animation: none;
+  margin-top: 1rem;
+  margin: auto; }
 
 .heading-primary {
   position: absolute;
@@ -224,6 +228,7 @@ p::selection {
 .tours {
   margin-top: -20rem;
   padding-top: 10rem;
+  padding-bottom: 5rem;
   background-color: #e0faddcc; }
   .tours .row {
     padding-top: 30rem; }
@@ -430,6 +435,32 @@ p::selection {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
+
+.stories {
+  padding: 3rem; }
+
+.story {
+  width: 75%;
+  background: #e0fadd7a;
+  margin: 4rem auto;
+  padding: 6rem;
+  transform: skewX(-10deg); }
+  .story > * {
+    transform: skewX(10deg); }
+  .story-figure {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(10deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
 
 *, *::after, *::before {
   margin: 0px;
