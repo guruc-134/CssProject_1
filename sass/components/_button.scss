@@ -1,53 +1,52 @@
 .btn
+{
+    &:visited, &:link
     {
-        &:visited, &:link
-        {
-            color:black;
-            background-color:white;
-            display: inline-block;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding:1rem;
-            border-radius: 40rem;
-            box-shadow: 0px 4px 7px rgba(17, 16, 16, 0.733);
-            animation: appear  2s  ease-in 0.5s;
-            animation-fill-mode: backwards;
-            position: relative;
-            margin-top:3rem;
-            padding: 1.8rem;
+        color:black;
+        background-color:white;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:1rem;
+        border-radius: 40rem;
+        box-shadow: 0px 4px 7px rgba(17, 16, 16, 0.733);
+        animation: appear  2s  ease-in 0.5s;
+        animation-fill-mode: backwards;
+        position: relative;
+        margin-top:3rem;
+        padding: 1.8rem;
+    }
+    &:hover
+    {
+        transform: translateY(-4px);
+        box-shadow: 0px 4px 5px $Box_shadow_light;
+        &::after{
+            transform:scale(1.6);
+            opacity: 0;
         }
-        &:hover
-        {
-            transform: translateY(-4px);
-            box-shadow: 0px 4px 5px $Box_shadow_light;
-            &::after{
-                transform:scale(1.6);
-                opacity: 0;
-            }
-        }
-        &:active
-        {
-            transform:translateY(-2px);
-            box-shadow: 0px 3px 3px ;
-        }
-        &::after
-        {
-            content:"";
-            width:100%;
-            display:inline-block;
-            height:100%;
-            position:absolute;
-            border-radius: 10rem;
-            background-color:white;
-            top:0;
-            left:0;
-            z-index:-1;
-            transition: all 0.2s;
-        }
+    }
+    &:active
+    {
+        transform:translateY(-2px);
+        box-shadow: 0px 3px 3px ;
+    }
+    &::after
+    {
+        content:"";
+        width:100%;
+        display:inline-block;
+        height:100%;
+        position:absolute;
+        border-radius: 10rem;
+        background-color:white;
+        top:0;
+        left:0;
+        z-index:-1;
+        transition: all 0.2s;
+    }
 }
 .btn-text
 {
-
     &:link,
     &:visited
     {
@@ -71,10 +70,8 @@
     {
         box-shadow: 0px 3px 2px $Box_shadow_light;
 
-    }
-    
+    } 
 }
-
 .button_card
 {
     width:12rem;
@@ -86,4 +83,9 @@
         margin-top:22rem;
     }
     
+}
+.section_button
+{
+    background-color: $Medium_green;
+    color: aqua;
 }
